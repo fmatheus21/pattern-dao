@@ -3,12 +3,8 @@ package com.fmatheus.app.model.dao;
 
 import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
-/**
- * @param <T>
- * @author Fernando Matheus
- */
+
 public interface InterfaceGenericDao<T> {
 
     T save(T t);
