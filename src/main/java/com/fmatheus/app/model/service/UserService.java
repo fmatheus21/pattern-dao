@@ -23,7 +23,7 @@ public class UserService extends FactoryDao implements Serializable {
         return userFactoryDao().findAllNamedQuery(NamedQueryConstant.USER_FIND_ALL);
     }
 
-    public User findAllByStringNamedQuery(String parameter) {
+    public User findByStringNamedQuery(String parameter) {
         return userFactoryDao().findByStringNamedQuery(NamedQueryConstant.USER_BY_USERNAME, "username", parameter);
     }
 

@@ -33,8 +33,8 @@ public class UserResource {
     }
 
     @GetMapping("/named-query/parameter")
-    public PersonResponse findAllByStringNamedQuery(@RequestParam String username) {
-        return this.rule.findAllByStringNamedQuery(username);
+    public PersonResponse findByStringNamedQuery(@RequestParam String username) {
+        return this.rule.findByStringNamedQuery(username);
     }
 
 }
